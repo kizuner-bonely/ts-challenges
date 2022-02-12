@@ -6,6 +6,5 @@
 ```shell
 git clone https://github.com/Determination-cheng/ts-challenges.git
 
-npm install @type-challenges/utils --save-dev
+pnpm add -D @type-challenges/utils
 ```
-
