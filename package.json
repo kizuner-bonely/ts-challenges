@@ -1,0 +1,23 @@
+{
+  "name": "ts-challenges",
+  "version": "1.0.0",
+  "description": "ts类型体操",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Determination-cheng/ts-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Determination-cheng/ts-challenges/issues"
+  },
+  "homepage": "https://github.com/Determination-cheng/ts-challenges#readme",
+  "devDependencies": {
+    "@type-challenges/utils": "^0.1.1"
+  }
+}
