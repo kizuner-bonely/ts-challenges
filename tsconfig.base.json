@@ -10,7 +10,9 @@
     "noUnusedLocals": false,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "allowJs": true
+    "allowJs": true,
+    "sourceMap": true,
+    "emit": false
   },
   "exclude": ["node_modules", "dist"]
 }
