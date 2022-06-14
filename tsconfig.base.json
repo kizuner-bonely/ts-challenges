@@ -12,7 +12,7 @@
     "noImplicitReturns": true,
     "allowJs": true,
     "sourceMap": true,
-    "emit": false
+    "noEmit": true
   },
   "exclude": ["node_modules", "dist"]
 }

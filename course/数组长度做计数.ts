@@ -46,7 +46,7 @@ type DivideResult = Divide<30, 5> // 6
 type StrLen<
   S extends string,
   Res extends unknown[] = [],
-> = S extends `${infer First}${infer Rest}`
+> = S extends `${infer _First}${infer Rest}`
   ? StrLen<Rest, [...Res, unknown]>
   : Res['length']
 
