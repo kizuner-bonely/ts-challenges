@@ -95,6 +95,7 @@ type Defaultize<
   A extends Record<keyof any, any>,
   B extends Record<keyof any, any>,
 > = Pick<A, Exclude<keyof A, keyof B>> & Partial<B>
+// Omit<A, keyof B> & Partial<B>
 
 type A = { aaa: 111; bbb: 222; ddd: 444 }
 type B = { bbb: 222; ccc: 333 }
