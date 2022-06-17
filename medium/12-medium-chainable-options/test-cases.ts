@@ -8,9 +8,9 @@ const result = a
   .option('name', 'type-challenges')
   .get()
 
-type cases = [
-  Expect<Alike<typeof result, Expected>>
-]
+type Res = typeof result
+
+type cases = [Expect<Alike<typeof result, Expected>>]
 
 type Expected = {
   foo: number
