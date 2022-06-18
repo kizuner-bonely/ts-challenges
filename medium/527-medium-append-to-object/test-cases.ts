@@ -1,5 +1,11 @@
 import { Equal, Expect } from '@type-challenges/utils'
 
+type Test = Copy<AppendToObject<test1, 'home', boolean>>
+
+type Copy<O extends Record<keyof any, any>> = {
+  [K in keyof O]: O[K]
+}
+
 type test1 = {
   key: 'cat'
   value: 'green'
@@ -40,5 +46,10 @@ type testExpect3 = {
 type cases = [
   Expect<Equal<AppendToObject<test1, 'home', boolean>, testExpect1>>,
   Expect<Equal<AppendToObject<test2, 'home', 1>, testExpect2>>,
-  Expect<Equal<AppendToObject<test3, 'isMotherRussia', false | undefined>, testExpect3>>,
+  Expect<
+    Equal<
+      AppendToObject<test3, 'isMotherRussia', false | undefined>,
+      testExpect3
+    >
+  >,
 ]
