@@ -1,4 +1,5 @@
 import { Equal, Expect } from '@type-challenges/utils'
+import type { Capitalize } from './template'
 
 type cases = [
   Expect<Equal<Capitalize<'foobar'>, 'Foobar'>>,
