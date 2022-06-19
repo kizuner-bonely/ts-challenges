@@ -5,3 +5,5 @@ type cases = [
   Expect<Equal<LastIndexOf<[2, 6, 3, 8, 4, 1, 7, 3, 9], 3>, 7>>,
   Expect<Equal<LastIndexOf<[0, 0, 0], 2>, -1>>,
 ]
+
+type Test = LastIndexOf<[2, 6, 3, 8, 4, 1, 7, 3, 9], 3>
