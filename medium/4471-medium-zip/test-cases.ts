@@ -7,3 +7,5 @@ type cases = [
   Expect<Equal<Zip<[], [1, 2, 3]>, []>>,
   Expect<Equal<Zip<[[1, 2]], [3]>, [[[1, 2], 3]]>>,
 ]
+
+type Test = Zip<[], []>
