@@ -10,5 +10,7 @@ type cases = [
   Expect<Equal<ParsePrintFormat<'The result is %h.'>, ['hex']>>,
   Expect<Equal<ParsePrintFormat<'The result is %q.'>, []>>,
   Expect<Equal<ParsePrintFormat<'Hello %s: score is %d.'>, ['string', 'dec']>>,
-  Expect<Equal<ParsePrintFormat<'The result is %'>, []>>
+  Expect<Equal<ParsePrintFormat<'The result is %'>, []>>,
 ]
+
+type Test = ParsePrintFormat<'The result is %%d.'>
