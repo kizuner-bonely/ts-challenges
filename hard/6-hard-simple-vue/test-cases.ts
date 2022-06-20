@@ -1,4 +1,3 @@
-
 import { Equal, Expect } from '@type-challenges/utils'
 
 SimpleVue({
@@ -31,9 +30,7 @@ SimpleVue({
     },
     test() {
       const fullname = this.fullname
-      const cases: [
-        Expect<Equal<typeof fullname, string>>,
-      ] = [] as any
+      const cases: [Expect<Equal<typeof fullname, string>>] = [] as any
     },
   },
 })
