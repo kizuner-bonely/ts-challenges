@@ -62,5 +62,5 @@ type _tests = [
   Expect<Equal<typeof store.str, string>>,
   Expect<Equal<typeof store.stringifiedNum, string>>,
   Expect<Equal<typeof store.parsedNum, number>>,
-  Expect<Equal<typeof r, true>>
+  Expect<Equal<typeof r, true>>,
 ]
