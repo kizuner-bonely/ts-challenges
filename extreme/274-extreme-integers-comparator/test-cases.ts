@@ -19,3 +19,5 @@ type cases = [
   Expect<Equal<Comparator<27, 27>, Comparison.Equal>>,
   Expect<Equal<Comparator<-38, -38>, Comparison.Equal>>,
 ]
+
+type TT = Comparator<5, 5>
